@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+header, footer {
+  color: $bart_white;
+  background-color: $bart_black;
+  padding-left: 0.5rem;
+}
+#container {
+  display: flex;
+  flex: 1;
+}
+#main-content {
+  flex: 1;
+}
+.region-sidebar {
+  flex: 0 20em;
+  background-color: $sidebar_background;
+}
+header {
+  font-size: 2rem;
+  p, ul {
+    margin-bottom: 0;
+  }
+  .menu {
+    font-size: 1rem;
+    li {
+      list-style: none;
+      display: inline-block;
+      &.first {
+        margin-left: 0.10rem;
+      }
+      a {
+        color: $bart_white;
+      }
+    }
+  }
+}
+
+.region-alerts {
+  color: $bart_white;
+  background-color: $alert_background;
+  height: 3rem;
+  line-height: 3rem;
+  padding-left: 0.5rem;
+}

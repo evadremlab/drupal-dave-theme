@@ -1,0 +1,12 @@
+name = Dave
+description = A Custom Drupal 7 Theme
+core = 7.x
+stylesheets[all][] = css/reboot.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/flex.css
+scripts[] = js/theme.js
+regions[header] = Header
+regions[alerts] = Alerts
+regions[content] = Content
+regions[sidebar] = Sidebar
+regions[footer] = Footer

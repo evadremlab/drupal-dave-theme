@@ -1,0 +1,24 @@
+{
+  "name": "bart",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^2.2.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "private": true,
+  "//": "The postinstall script is needed to work-around this Drupal core bug: https://www.drupal.org/node/2329453",
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete",
+    "test": "grunt"
+  },
+  "dependencies": {
+    "compass-sass-mixins": "^0.12.7"
+  }
+}
